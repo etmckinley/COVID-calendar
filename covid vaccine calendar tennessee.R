@@ -8,6 +8,7 @@ library(zoo)
 library(lubridate)
 library(cowplot)
 library(colorspace)
+library(readxl)
 
 download.file("https://www.tn.gov/content/dam/tn/health/documents/cedep/novel-coronavirus/datasets/COVID_VACCINE_COUNTY_SUMMARY.XLSX",
               "./Covid Vaccines/COVID_VACCINE_COUNTY_SUMMARY.XLSX")

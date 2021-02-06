@@ -39,8 +39,6 @@ vaccines = vaccines %>%
   group_by(month) %>% 
   mutate(monthweek = 1 + week - min(week)) 
 
-pal <- wes_palette("Zissou1", 100, type = "continuous")
-
 p=vaccines %>%  
   ggplot(aes(x = weekday, y = -week, fill = NEW_VACCINE_COUNT)) +
   geom_tile(color = "black")  + 
